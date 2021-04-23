@@ -1,0 +1,96 @@
+body {
+	padding: 5px;
+}
+.header {
+	background-color: antiquewhite;
+	/* width: 100%; */
+	height: 350px;
+	padding: 7px;
+	display: flex;
+}
+.container {
+	background-color: rosybrown;
+	flex: 100%;
+	display: flex;
+}
+.deals {
+	margin: 7px 0px 7px 7px;
+	flex: 70%;
+	background-color: aquamarine;
+}
+.box {
+	flex: 30%;
+	margin: 7px;
+	background-color: rebeccapurple;
+	display: flex;
+	flex-direction: column;
+}
+.tabs {
+	flex: 25%;
+	font-family: 'Acme', sans-serif;
+	font-size: 30px;
+	background-color: sandybrown;
+	display: flex;
+	text-align: center;
+}
+.content-wrapper {
+	flex: 85%;
+	background-color: yellow;
+}
+.tab1, .tab2 {
+	flex: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.tab1 {
+	background-color: yellow;
+}
+.tab2 {
+	background-color: lightgreen;
+}
+.namespaceholder {
+	flex: 30%;
+}
+.nameplaceholder {
+	margin: auto;
+	flex: 80%;
+}
+.dtimg {
+	float: left;
+	width: 35px;
+	height: 35px;
+}
+header {
+	background-color: #fcbe17;
+	height: 50px;
+	/* width: 100%; */
+}
+.mainmenu:hover {
+	background-color: #f5b300;
+}
+#navbar {
+	margin-left: 200px;
+	display: flex;
+}
+#space {
+	flex: 70%;
+}
+.mainmenu {
+	flex: 35%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Acme', sans-serif;
+	font-size: 22px;
+	color: #ffffff;
+}
+a {
+	display: block;
+	flex: 30%;
+	text-decoration: none;
+}
+.menuimg {
+    width: 35px;
+    height: 35px;
+	float: left;
+}

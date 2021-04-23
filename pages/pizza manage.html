@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>PIZZA HUT</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/menu.css">
+<body>
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    
+  </div>
+</div>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dessets</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;199</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Farmhouse</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;395</span></h1>
+      <p class="w3-text-grey">Delightful combination of onion, capsicum, tomato & grilled mushroom</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;275</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Veg Extravaganza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;450</span></h1>
+      <p class="w3-text-grey">Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese</p>
+      <hr>
+
+      <h1><b>Veggie Paradise</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;395</span></h1>
+      <p class="w3-text-grey">The awesome foursome! Golden corn, black olives, capsicum, red paprika</p>
+      <hr>
+
+      <h1><b>Pepper Barbecue Chicken</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;335</span></h1>
+      <p class="w3-text-grey">Pepper barbecue chicken for that extra zing</p>
+      <hr>
+      <h1><b>The Unthinkable Pizza</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;450</span></h1>
+      <p class="w3-text-grey">Loaded with Plant Based Protein topping along with Black Olives & Red</p>
+      <hr>
+      <h1><b>Peppy Paneer</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;395</span></h1>
+      <p class="w3-text-grey">Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika</p>
+      <hr>
+      <h1><b>Cheese n Corn</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;305</span></h1>
+      <p class="w3-text-grey">A delectable combination of sweet & juicy golden corn</p>
+      <hr>
+      <h1><b>Chicken Sausage</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;305/span></h1>
+      <p class="w3-text-grey">American classic! Spicy, herbed chicken sausage on pizza</p>
+      <hr>
+      
+      
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Creamy Tomato Pasta Veg</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;145</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olive, Green Capsicum, Parsley sprinkle</p>
+      <hr>
+   
+      <h1><b>Tikka Masala Pasta Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;139</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Spicy Red dressing, Onion, Paneer Tikka, Parsley sprinkle</p>
+      <hr>
+      
+      <h1><b>Moroccan Spice Pasta Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;129</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Harissa Sauce, Onion, Mushroom, Olives, Parsley sprinkle</p>
+      <hr>
+
+      <h1><b>Creamy Tomato Pasta Non Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;129</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olives, BBQ Pepper Chicken, Parsley sprinkle</p>
+      <hr>
+      <h1><b>Tikka Masala Pasta Non Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;139</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Spicy Red dressing, Onion, Chicken Tikka, Parsley sprinkle</p>
+      <hr>
+      <h1><b>Moroccan Spice Pasta Non Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;139</span></h1>
+      <p class="w3-text-grey">Instant Fusilli Pasta, Harissa Sauce, Onion, Olives, Meatballs, Parsley sprinkle</p>
+      <hr>
+      
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Starter</b> <span class="w3-tag w3-grey w3-round">Deals</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;250</span></h1>
+      <p class="w3-text-grey">Amazing deals tonight</p>
+      <hr>
+   
+      <h1><b>Chicken wings</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;320</span></h1>
+      <p class="w3-text-grey">Doused in chef's special garlic&herb glaze</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round"&#8377;170</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Stuffed Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;240</span></h1>
+      <p class="w3-text-grey">freshly baked breadsticks overflowing with cheese,corn,jalapenos</p>
+      <hr>
+      <h1><b>Paneer Tikka Stuffed Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;150</span></h1>
+      <p class="w3-text-grey">Freshly Baked Stuffed Garlic Bread with Cheese, Onion and Paneer Tikka fillings. </p>
+      <hr>
+      <h1><b>Chicken Pepperoni Stuffed Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;150</span></h1>
+      <p class="w3-text-grey">Freshly Baked Garlic Bread stuffed with Delectable Chicken Pepperoni, Cheese and sprinkled with Basil Parsley</p>
+      <hr>
+      <h1><b>Taco Mexicana Non Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;135</span></h1>
+      <p class="w3-text-grey">Truly irresistible! Crispy taco with non-veg patty & creamy harissa sauce</p>
+      <hr>
+      <h1><b>Taco Mexicana Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;119</span></h1>
+      <p class="w3-text-grey">Truly irresistible! Crispy taco with veg patty & creamy harissa sauce</p>
+      <hr>
+      <h1><b>Burger Pizza - Classic Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;105</span></h1>
+      <p class="w3-text-grey">Oven-baked buns with cheese, tomato & capsicum in creamy mayo</p>
+      <hr>
+      <h1><b>Burger Pizza - Premium Veg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;135</span></h1>
+      <p class="w3-text-grey">Oven-baked buns with cheese, paneer, tomato, capsicum & red paprika in creamy mayo</p>
+      <hr>
+
+    </div>
+    <div id="Desserts" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Today's special</b> <span class="w3-tag w3-grey w3-round">Desserts</span><span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;300</span></h1>
+    <p class="w3-text-grey">Exciting!!</p>
+    <hr>
+ 
+    <h1><b>Choco overload brownie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;159</span></h1>
+    <p class="w3-text-grey">Utterly choclate brownie with the fudgiest centre</p>
+    <hr>
+    
+    <h1><b>Dark chocolate mousse </b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;190</span></h1>
+    <p class="w3-text-grey">An explosion of creamy butterscotch7 rich coco cake crumble in every bite/p>
+    <hr>
+    
+    <h1><b>Choco lava cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;175</span></h1>
+    <p class="w3-text-grey">With a crisp exterior & molten chocolate oozing out of it's center</p>
+    </div>
+    <div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Today's special</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+        <p class="w3-text-grey">Ask the waiter</p>
+        <hr>
+     
+        <h1><b>Pepsi (500ml)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;15</span></h1>
+        <p class="w3-text-grey">Sparkling and Refreshing Beverage</p>
+        <hr>
+        
+        <h1><b>Slice (350ml) </b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;30</span></h1>
+        <p class="w3-text-grey">Great Mango Taste</p>
+        <hr>
+        
+        <h1><b>7Up (500ml)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;45</span></h1>
+        <p class="w3-text-grey">Refreshing clear drink with a natural lemon flavor</p>
+        <hr>
+        <h1><b>Pepsi Black Can</b> <span class="w3-right w3-tag w3-dark-grey w3-round">&#8377;30</span></h1>
+        <p class="w3-text-grey">Maximum Taste Zero Calories</p>
+        <hr>
+
+        </div><br>
+
+  </div>
+</div>
+
+
+ <script>
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script> 
+
+</body>
+</html>
