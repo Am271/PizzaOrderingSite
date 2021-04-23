@@ -1,0 +1,26 @@
+/* #content {
+    background-color: lightgreen;
+    height: 400px;
+    width: 500px;
+} */
+.nameholder {
+    padding: 20px;
+    color: #b07e41;
+    text-align: center;
+    display: flex;
+}
+.label {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    flex: 20%;
+}
+#input {
+    flex: 80%;
+    margin-left: 15px;
+}
+#data {
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-shadow: 5px 5px #41b020;
+}
