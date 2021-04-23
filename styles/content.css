@@ -23,4 +23,8 @@
     width: 100%;
     display: block;
     box-shadow: 5px 5px #41b020;
+    border: none;
+    outline: none;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
 }
