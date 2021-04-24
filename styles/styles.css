@@ -58,13 +58,6 @@ header {
 .tab2 {
 	background-color: lightgreen;
 }
-.namespaceholder {
-	flex: 30%;
-}
-.nameplaceholder {
-	margin: auto;
-	flex: 80%;
-}
 .dtimg {
 	float: left;
 	width: 35px;
