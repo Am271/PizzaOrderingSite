@@ -1,12 +1,42 @@
-body, html {height: 100%}
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-
-.menu {display: none}
-
-.bgimg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../images/pizza.jpg");
-  min-height: 90%;
+body {
+  background-color: #2e2e2e;
+  color: azure;
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 22px;
+}
+#home {
+  float: left;
+}
+#home img {
+  width: 50px;
+  height: 50px;
+}
+table {
+  padding: 3px;
+  margin: auto;
+  border: none;
+}
+th, td {
+  padding: 3px;
+  border: none;
+}
+th {
+  color: #ffd49c;
+}
+.regular {
+  color: #ff8c8c;
+}
+.medium {
+  color: #afff7a;
+}
+.large {
+  color: #94a9ff;
+}
+.price {
+  color: #fff875;
+}
+td img {
+  /* margin-left: 50px; */
+  width: 490px;
+  height: 120px;
 }
