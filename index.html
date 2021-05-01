@@ -23,38 +23,21 @@
 				HOME</span></a>	
 		</div>
 	</header>
-	<div class="deals">
-		<div id="container">
-		<!-- place deals here -->
-			<div id="tabs">
-				<div class="tab1" id="delivery"><div class="namespaceholder"></div>
-					<div class="nameplaceholder">
-						Delivery</div></div>
-				<div class="tab2" id="takeaway"><div class="namespaceholder"></div>
-					<div class="nameplaceholder"><img src="images/take-away-food.png" alt="takeaway pic" class="dtimg">
-						Takeaway</div></div>
-			</div>
-			<div id="box">
-				<div class="content-wrapper">
-					<div id="content">
-						<div class="nameholder">
-							<div class="label" id="namelabel">Name</div>
-							<div class="input"><input type="text" class="inputdata"></div>
-						</div>
-						<div class="nameholder">
-							<div class="label" id="contactlabel">Contact</div>
-							<div class="input"><input type="text" class="inputdata"></div>
-						</div>
-						<div id="addressholder">
-							<div class="label" id="addresslabel">Address</div>
-							<div class="input"><textarea rows="4" columns="30" class="inputdata"></textarea></div>
-						</div>
-					</div>
-				</div>
-			</div>
+	<div id="deals">
+		<!-- deals will go here -->
+	</div>
+	<div id="floating-window">
+		<div class="tab">
+			<div id="delivery"><img src="./images/delivery.png">Delivery</div>
+			<div id="takeaway"><img src="./images/takeaway.png">Takeaway</div>
+		</div>
+		<div class="inp-data">
+			<input class="inp" name="name" type="text" placeholder="Name">
+			<input class="inp" name="name" type="text" placeholder="Number">
+			<textarea name="address" id="addressdata" cols="15" rows="4" placeholder="Address"></textarea>
+			<div id="order"></div>
 		</div>
 	</div>
-	<hr>
 	<script src="scripts/main.js"></script>
 </body>
 </html>
