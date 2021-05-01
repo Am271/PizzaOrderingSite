@@ -5,8 +5,11 @@ function showTab(j) {
     if(j) {
         document.getElementById("addressdata").style.display = "block"; //delivery tab is highlighted
         // document.getElementById("delivery").style.border = "2px solid #ffb14d";
+        document.getElementById("delivery-img").style.content = "url('images/delivery.png')";
+        document.getElementById("takeaway-img").style.content = "url('images/takeaway.png')";
         document.getElementById("takeaway").style.border = "none";
         document.getElementById("floating-window").style.backgroundColor = "whitesmoke";
+        document.getElementById("floating-window").style.transition = "1s";
         document.getElementById("delivery").style.color = "#ffbb45";
         document.getElementById("takeaway").style.color = "#ffbb45";
         var inp = document.getElementsByClassName("inp");
@@ -20,8 +23,11 @@ function showTab(j) {
     else {
         document.getElementById("addressdata").style.display = "none"; //takeaway tab is highlighted
         // document.getElementById("takeaway").style.border = "2px solid #ffb14d";
+        document.getElementById("delivery-img").style.content = "url('images/deliverywhite.png')";
+        document.getElementById("takeaway-img").style.content = "url('images/takeawaywhite.png')";
         document.getElementById("delivery").style.border = "none";
         document.getElementById("floating-window").style.backgroundColor = "#ffbb45";
+        document.getElementById("floating-window").style.transition = "1s";
         document.getElementById("delivery").style.color = "whitesmoke";
         document.getElementById("takeaway").style.color = "whitesmoke";
         var inp = document.getElementsByClassName("inp");
