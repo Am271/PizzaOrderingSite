@@ -35,8 +35,19 @@ th {
 .price {
   color: #fff875;
 }
+tr {
+  cursor: pointer;
+}
 td img {
   /* margin-left: 50px; */
   width: 490px;
   height: 120px;
+}
+#ordertxt {
+  font-size: 35px;
+  color: #ffbb45;
+}
+#orders {
+  margin-top: 20px;
+  color: #ffbb45;
 }

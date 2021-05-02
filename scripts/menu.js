@@ -1,6 +1,39 @@
-var content=document.getElementById('content');
-var menuData= '<table border="border"><tr><th rowspan="2">Pizza name</th><th colspan="3">Price</th><th rowspan="2">Pasta<th rowspan="2">Price</th><th rowspan="2">Starters</th><th rowspan="2">Price</th><th rowspan="2">Desserts</th><th rowspan="2">Price</th><th rowspan="2">Beverages</th><th rowspan="2">Price</th></tr><tr><th>Regular</th><th>Medium</th><th>Large</th></tr><tr><td>Margheretta</td><td>&#8377;99</td><td>&#8377;199</td><td>&#8377;395</td><td>Moroccan Spice Pasta Veg</td><td>&#8377;129</td><td>Chicken wings</td><td>&#8377;199</td><td>Choco overload brownie</td><td>&#8377;59</td><td>Pepsi (500ml)</td><td>&#8377;60</td></tr><tr><td>Farmhouse</td><td>&#8377;215</td><td>395</td>s<td>&#8377;595</td><td>Creamy Tomato Pasta Veg</td><td>&#8377;129</td><td>Garlic bread</td><td>&#8377;99</td><td>Dark chocolate mousse</td><td>&#8377;99</td><td>Slice (350ml)</td><td>&#8377;50</td></tr><tr><td>veggie Paradise</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td><td>Creamy Tomato Pasta Non Veg</td><td>&#8377;139</td><td>Stuffed Garlic bread</td><td>&#8377;99</td><td>Choco lava cake</td><td>&#8377;99</td><td>7Up (500ml)</td><td>&#8377;60</td></tr></tr><tr><td>Chicken</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td><td>Creamy Tomato Pasta Non Veg</td><td>&#8377;139</td><td>Taco Mexicana Non Veg</td><td>&#8377;135</td><td></td><td></td><td>Pepsi Black Can</td><td>&#8377;60</td></tr><tr><td>Veg Extravaganza</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td><td>Tikka Masala Pasta Veg</td><td>&#8377;129</td><td>Burger Pizza - Classic Veg</td><td>&#8377;105</td></tr><tr><td>Pepper Barbecue Chicken</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td><td>Tikka Masala Pasta Non Veg</td><td>&#8377;139</td><td>Burger Pizza - Premium Veg</td><td>&#8377;135</td></tr><tr><td>The Unthinkable Pizza</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td><td>Moroccan Spice Pasta Non Veg</td><td>&#8377;139</td></tr><tr><td>Peppy Paneer</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td></tr><tr><td>Cheese n Corn</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td></tr><tr><td>Chicken Sausage</td><td>&#8377;215</td><td>&#8377;395</td><td>&#8377;595</td></tr></table>'
+function addOnclick(ele, size) {
+    for(var i = 0; i < ele.length; i++) {
+        ele[i].addEventListener("click", function() {addOrder(this.parentElement.textContent.split("\n")[1].trim(), size)});
+    }
+}
 
-function showmenu(){
-    content.innerHTML=menuData;
+function addOnClick2(ele, size) {
+    for(var i = 0; i < ele.length; i++) {
+        ele[i].addEventListener("click", function() {addOrder(this.textContent.trim(), size);});
+    }
+}
+
+var reg = document.getElementsByClassName("regular");
+var med = document.getElementsByClassName("medium");
+var lar = document.getElementsByClassName("large");
+var pizza = document.getElementsByClassName("pizza");
+var pasta = document.getElementsByClassName("pasta");
+var dessert = document.getElementsByClassName("dessert");
+var starter = document.getElementsByClassName("starter");
+var beverage = document.getElementsByClassName("beverage");
+
+addOnclick(reg, "Regular");
+addOnclick(med, "Medium");
+addOnclick(lar, "Large");
+addOnClick2(pizza, "Medium");
+addOnClick2(pasta, "None");
+addOnClick2(dessert, "None");
+addOnClick2(starter, "None");
+addOnClick2(beverage, "None");
+
+function addOrder(item, size) {
+    var orderText = "Added " + item
+    if(size == "None") {
+        document.getElementById("orders").innerHTML += orderText + "<br>"
+    }
+    else {
+        document.getElementById("orders").innerHTML += orderText + "(" + size + ")" + "<br>"
+    }
 }
