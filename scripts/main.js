@@ -1,6 +1,19 @@
 document.getElementById("delivery").addEventListener("click", function() {showTab(1);});
 document.getElementById("takeaway").addEventListener("click", function() {showTab(0);});
 // #floating-window
+/* color: seashell; */
+	/* border: none;
+	border-bottom: 2px solid #60f542;	
+	outline: none;
+	background-color: inherit; */
+// var ele = document.getElementsByTagName("input");
+// for(var i = 0; i < ele.length; i++) {
+//     ele.style.setProperty('--border', "none");
+//     ele.style.setProperty('--border-bottom', "2px solid #60f542");
+//     ele.style.setProperty('--outline', "none");
+//     ele.style.setProperty('--bgcolor', "inherit");
+// }
+style.setProperty('--scrollbar-background', localStorage.getItem("Color"));
 function showTab(j) {
     if(j) {
         document.getElementById("addressdata").style.display = "block"; //delivery tab is highlighted
@@ -19,6 +32,7 @@ function showTab(j) {
         }
         document.getElementById("addressdata").style.color = "#ffbb45";
         document.getElementById("order").style.backgroundColor = "#ffbb45";
+        document.getElementById("orderhref").style.color = "whitesmoke";
     }
     else {
         document.getElementById("addressdata").style.display = "none"; //takeaway tab is highlighted
@@ -37,5 +51,6 @@ function showTab(j) {
         }
         document.getElementById("addressdata").style.color = "whitesmoke";
         document.getElementById("order").style.backgroundColor = "whitesmoke";
+        document.getElementById("orderhref").style.color = "#ffbb45";
     }
 }

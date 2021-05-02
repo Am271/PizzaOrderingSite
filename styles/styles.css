@@ -77,10 +77,14 @@ input[type=text], textarea {
 }
 input[type=text]:focus, textarea:focus {
 	/* color: seashell; */
-	border: none;
+	/* border: none;
 	border-bottom: 2px solid #60f542;	
 	outline: none;
-	background-color: inherit;
+	background-color: inherit; */
+	border: var(--border);
+	border-bottom: var(--border-bottom);	
+	outline: var(--outline);
+	background-color: var(--bgcolor);
 }
 textarea:focus {
 	border-right: 2px solid #60f542;
@@ -90,4 +94,18 @@ textarea:focus {
 	height: 50px;
 	width: 300px;
 	border-radius: 7px;
+	position: absolute;
+	top: 84%;
+	left: 17%;
+	text-align: center;
+}
+#ordertext {
+	display: block;
+	font-family: 'Acme', sans-serif;
+	font-size: 32px;
+	margin-top: 4px;
+}
+#ordertext a{
+	text-decoration: none;
+	color: whitesmoke;
 }
