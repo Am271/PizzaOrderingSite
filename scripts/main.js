@@ -1,6 +1,20 @@
 document.getElementById("delivery").addEventListener("click", function() {showTab(1);});
 document.getElementById("takeaway").addEventListener("click", function() {showTab(0);});
-style.setProperty('--scrollbar-background', localStorage.getItem("Color"));
+
+var slides = document.getElementsByClassName("slide")
+for(var j = 0; j < slides.length; j++) {
+    slides[j].addEventListener("click", function() {showWindow();});
+}
+
+function showWindow() {
+    var fwindow = document.getElementById("floating-window");
+    if(fwindow.style.display == "") {
+        fwindow.style.display = "block";
+    }
+    else if(fwindow.style.display == "block") {
+        fwindow.style.display = "none";
+    }
+}
 function showTab(j) {
     if(j) {
         document.getElementById("addressdata").style.display = "block"; //delivery tab is highlighted

@@ -40,3 +40,6 @@ hr {
 	height: 480px;
 	margin: auto;
 }
+.slide:hover {
+	cursor: pointer;
+}
