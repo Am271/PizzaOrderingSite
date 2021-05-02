@@ -10,6 +10,7 @@
 	left: 27%;
 	background-color: whitesmoke;
 	border-radius: 15px;
+    display: none;
     /* transition: 2s; */
 }
 .tab {
