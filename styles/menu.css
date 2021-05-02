@@ -50,4 +50,8 @@ td img {
 #orders {
   margin-top: 20px;
   color: #ffbb45;
+  width: 55%;
+}
+#orderprice {
+  float: right;
 }

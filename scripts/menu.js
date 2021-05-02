@@ -1,12 +1,12 @@
 function addOnclick(ele, size) {
     for(var i = 0; i < ele.length; i++) {
-        ele[i].addEventListener("click", function() {addOrder(this.parentElement.textContent.split("\n")[1].trim(), size)});
+        ele[i].addEventListener("click", function() {addOrder(this.parentElement.textContent.split("\n")[1].trim(), size, this)});
     }
 }
 
 function addOnClick2(ele, size) {
     for(var i = 0; i < ele.length; i++) {
-        ele[i].addEventListener("click", function() {addOrder(this.textContent.trim(), size);});
+        ele[i].addEventListener("click", function() {addOrder(this.textContent.trim(), size, this);});
     }
 }
 
@@ -28,12 +28,23 @@ addOnClick2(dessert, "None");
 addOnClick2(starter, "None");
 addOnClick2(beverage, "None");
 
-function addOrder(item, size) {
-    var orderText = "Added " + item
-    if(size == "None") {
-        document.getElementById("orders").innerHTML += orderText + "<br>"
+function addOrder(item, size, ele) {
+    var baseText = "Added " + item
+    var price = 0
+    switch(ele.className) {
+        case "regular": case "medium": case "large":
+            price = ele.textContent
+            orderText = baseText + " (" + size + ")";
+            break;
+        case "pizza":
+            price = ele.parentElement.textContent.split("\n")[3]
+            orderText = baseText + " (" + size + ")";
+            break;
+        case "pasta": case "dessert": case "starter": case "beverage":
+            price = ele.nextElementSibling.textContent
+            orderText = baseText;
+            break;
     }
-    else {
-        document.getElementById("orders").innerHTML += orderText + "(" + size + ")" + "<br>"
-    }
+    document.getElementById("orders").innerHTML += orderText + "<br>";
+    document.getElementById("orderprice").innerHTML += price + "<br>";
 }
