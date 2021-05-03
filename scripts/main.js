@@ -8,7 +8,7 @@ for(var j = 0; j < slides.length; j++) {
 
 function showWindow() {
     var fwindow = document.getElementById("floating-window");
-    if(fwindow.style.display == "") {
+    if(fwindow.style.display == "" || fwindow.style.display == "none") {
         fwindow.style.display = "block";
     }
     else if(fwindow.style.display == "block") {
